@@ -1,10 +1,10 @@
 //Toggle the line-through effect when an li is clicked
-$("li").on("click",function(){
+$("ul").on("click", 'li', function(){
     $(this).toggleClass("done");
 })
 
 //Click on X to delete a todo
-$(".delete").on("click",function(event){
+$("ul").on("click", '.delete', function(event){
     event.stopPropagation();
     $(this).parent("li").fadeOut(500,function(){
         $(this).remove();
