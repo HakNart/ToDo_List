@@ -1,3 +1,9 @@
 body {
     background: lightblue;
 }
+
+#container {
+    background: gray;
+    width: 360px;
+    margin: 0px auto;
+}
