@@ -9,7 +9,7 @@ body {
     border: solid 2px black;
 }
 
-.clicked {
+.done {
     text-decoration: line-through;
     color: gray;
 }
