@@ -10,3 +10,15 @@ $(".delete").on("click",function(event){
         $(this).remove();
     })
 })
+
+//Add a todo to the list
+$("input").on("keypress",function(event){
+    if(event.which === 13) {
+        //Store the input value into todoText
+        var todoText = $(this).val();
+        //Clear the input box
+        $(this).val("");
+        //Create a new li and add it to the ul
+        $("ul").append("<li><span class='delete'>X</span> " + todoText + "</li>"); 
+    }
+})
