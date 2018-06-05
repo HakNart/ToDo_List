@@ -3,7 +3,13 @@ body {
 }
 
 #container {
-    background: gray;
+    background: rgb(236, 232, 232);
     width: 360px;
     margin: 0px auto;
+    border: solid 2px black;
+}
+
+.clicked {
+    text-decoration: line-through;
+    color: gray;
 }
