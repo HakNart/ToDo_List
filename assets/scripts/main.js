@@ -19,6 +19,10 @@ $("input").on("keypress",function(event){
         //Clear the input box
         $(this).val("");
         //Create a new li and add it to the ul
-        $("ul").append("<li><span class='delete'>X</span> " + todoText + "</li>"); 
+        $("ul").append("<li><span class='delete'><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>"); 
     }
+})
+
+$(".fa-plus").click(function(){
+    $("input[type='text']").fadeToggle();
 })
